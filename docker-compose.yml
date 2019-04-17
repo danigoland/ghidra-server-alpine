@@ -1,0 +1,9 @@
+version: "3.7"
+services:
+  ghidra-server:
+    image: ghidra-server-alpine
+    container_name: ghidra-server-alpine
+    volumes:
+      - ./repos:/repos
+    ports:
+      - "13100-13102:13100-13102"
