@@ -1,7 +1,7 @@
 version: "3.7"
 services:
   ghidra-server:
-    image: ghidra-server-alpine
+    image: danigoland/ghidra-server-alpine:latest # you can change it to the local image if you wish
     container_name: ghidra-server-alpine
     volumes:
       - ./repos:/repos
